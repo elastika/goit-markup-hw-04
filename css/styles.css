@@ -8,6 +8,7 @@
     --c-background-light: #F4F4FD;
     --c-background-white: #FFF;
     --c-cornflower: #E7E9FC;
+    --c-additional-border: #8E8F99;
 }
 
 /*Base*/
@@ -209,9 +210,9 @@ button:focus {
     display: flex;
     gap: 24px;
 }
-.box-icon {
-    border: 1px solid #8E8F99;
-    background-color: #F4F4FD;
+.features-section-container-icon {
+    border: 1px solid var(--c-additional-border);
+    background-color: var(--c-background-light);
     border-radius: 4px;
     width: 264px;
     height: 112px;
@@ -220,7 +221,7 @@ button:focus {
     padding: 24px 100px;
 }
 
-.icon {
+.features-section-icon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -275,6 +276,7 @@ button:focus {
     flex-basis: calc((100%-72px)/4);
     border-radius: 0 0 4px 4px;
     text-align: center;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-member {
@@ -297,6 +299,40 @@ button:focus {
     line-height: 1.5em;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-section-socials {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-section-socials-menu {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-section-container-icon {
+    border: 1px solid var(--c-brand);
+    border-radius: 50%;
+    background-color: var(--c-brand);
+    width: 40px;
+    height: 40px;
+    padding: 12px 12px;
+}
+
+.team-section-icon {
+    fill: var(--c-primary-light);
+}
+
+.team-section-socials-link {
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 /*Our Portfolio Section*/
